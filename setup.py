@@ -1,8 +1,8 @@
 import os
 from setuptools import setup
 
-abspathconfig = '/root/.myapp/plugins.d'
-abspathplugins = '/root/.myapp/plugins'
+abspathconfig = '/root/.ee/plugins.d'
+abspathplugins = '/root/.ee/plugins'
 
 if not os.path.exists(abspathconfig):
     os.makedirs(abspathconfig)
@@ -12,18 +12,18 @@ if not os.path.exists(abspathplugins):
 
 
 
-setup(name='Demo Plugin',
+setup(name='Demo Plugin 4 ee',
       version='0.1',
       description='Demo Plugin',
       url='http://github.com/rjdp',
       author='rajdeep',
       author_email='rajdeep.sharma@rtcamp.com',
       license='MIT',
-      data_files=[(abspathconfig, ['testplugin/plugn.conf']),
-                  (abspathplugins, ['testplugin/plugn.py'])],
+      data_files=[(abspathconfig, ['testplugin/plugn4ee.conf']),
+                  (abspathplugins, ['testplugin/plugn4ee.py'])],
       # packages=['cli'],
       install_requires=[
-          'abc',
+          'ee',
       ],
       
       zip_safe=False)
