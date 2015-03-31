@@ -11,7 +11,6 @@ if not os.path.exists(abspathplugins):
     os.makedirs(abspathplugins)
 
 
-
 setup(name='Demo Plugin 4 ee',
       version='0.1',
       description='Demo Plugin',
@@ -25,5 +24,5 @@ setup(name='Demo Plugin 4 ee',
       install_requires=[
           'ee',
       ],
-      
+
       zip_safe=False)
