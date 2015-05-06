@@ -12,7 +12,7 @@ if not os.path.exists(abspathplugins):
 
 
 setup(name='Demo Plugin 4 ee',
-      version='0.1',
+      version='0.2',
       description='Demo Plugin',
       url='http://github.com/rjdp',
       author='rajdeep',
