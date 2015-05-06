@@ -2,7 +2,6 @@ import os
 from setuptools import setup
 
 abspathconfig = '/etc/ee/plugins.d'
-abspathplugins = '/usr/lib/ee/plugins'
 
 if not os.path.exists(abspathconfig):
     os.makedirs(abspathconfig)
